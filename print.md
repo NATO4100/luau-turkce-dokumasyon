@@ -52,3 +52,8 @@ dünya!"]])
 
 [^1]: (https://prnt.sc/8XfN4NXw9ySb), (https://prnt.sc/gNoEjGcNCWoE)
 
+
+
+kullanılan kaynaklar
+https://devforum.roblox.com/t/beginner-scripting-tutorial-1-print-statements/1605169
+https://roblox.fandom.com/wiki/Print
