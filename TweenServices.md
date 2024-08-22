@@ -55,7 +55,7 @@ https://github.com/user-attachments/assets/9187f03d-fe2b-4f24-83ad-988d2ace3c58
 TweenServices bu yüzden var!
 bunu kullanmak ilk başta karışık olabilir, size çok sade bir anlatım sunacağım.
 
-TweenServices'i kullanmak için önce GetService ile scriptimize çağırmalıyız.
+TweenServices'i kullanmak için önce GetService ile scriptimize hizmeti çağırmalıyız.
 
 ```lua
 local TweenService = game:GetService("TweenService")
@@ -113,7 +113,7 @@ task.wait(5)
 tween:Play()
 ```
 
-tween'i kullanmak için ilk önce nesnemisiz adını belirtmeliyiz, ben değişken olarak belirttiğim için ilk sıraya part koydum.
+tween'i kullanmak için ilk önce nesnemisiz adını belirtmeliyiz, ben değişken olarak belirttiğim için ilk sıraya **Part** koydum.
 daha sonra hangi animasyonu uygulayacaksak (tanımladığımız tweenInfo değişkeni) bunu 2. sıraya koyuyoruz.
 son olarak nesnemizin ***hangi değerini*** değiştireceksek onu yazıyoruz. dikkatli olun, Part.Transparency değil, sadece Transparency.
 
