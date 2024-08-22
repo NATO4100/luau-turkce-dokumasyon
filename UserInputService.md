@@ -16,7 +16,7 @@ bunun için öncelikle proje ortamımızı yapalım.
 
 # Nasıl yapacağız?
 
-ilk önce oluşturduğumuz localscript'in içine kizmeti kodumuza çağırmak için bu komutu kodumuza eklemeliyiz ilk önce:
+ilk önce oluşturduğumuz localscript'in içine hizmeti kodumuza çağırmak için bu komutu kodumuza eklemeliyiz ilk önce:
 ```lua
 local UserInputService = game:GetService("UserInputService")
 ```
@@ -68,7 +68,7 @@ https://github.com/user-attachments/assets/7a1e1727-f6d3-4d7e-947e-5228c3fdc2ad
 
 # Aynı örnek, farklı kod
 
-şimdi, kullanıcı Q ye bastığında köprüden geçiyor, fakat Q harfine basmayı bıraktığında körü kaybulmuyor, bunu düzeltmek için bu kodu ekliyoruz.
+şimdi, kullanıcı Q ye bastığında köprüden geçiyor, fakat Q harfine basmayı bıraktığında köprü kaybolmuyor, bunu düzeltmek için bu kodu ekliyoruz.
 
 ```lua
 UserInputService.InputEnded:Connect(function(input, gameProcessedEvent)
