@@ -55,3 +55,5 @@ end)
 ```
 
 https://github.com/user-attachments/assets/60a5488b-f6bd-42e2-80b7-2d7129d9a227
+
+# devam edecek.
