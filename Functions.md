@@ -125,4 +125,5 @@ bu kod satırında, eğer Humanoid bulursan, Humanoid.Health = 0 yap yani oyunun
 
 https://github.com/user-attachments/assets/d1b66f27-571d-4064-8875-3b78dd555d18
 
-
+kullanılan kaymaklar	
+https://create.roblox.com/docs/tutorials/fundamentals/coding-2/coding-a-function
