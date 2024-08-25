@@ -33,5 +33,36 @@ local Characters = LocalPlayer.Character -- LocalPlayer'in karakterini aldık
 
 local Humanoid = Characters:FindFirstChildWhichIsA("Humanoid")  --  Karakter içinde Humanoid bulmak için bir kod
 ```
-# kodu yarın anlatacağım, 40 saate yakın bir süredir uyumadım. iyi geceler.
-#
+
+burada oyuncunun Humanoid'ini bulduk. Humanoid ile oyuncunun hızı, zıplama seviyesi, dokunduğu şeyi tetikleme, animasyonları vb.. şeyleri ayarlayabiliriz.
+
+# Oyuna giren/çıkan kişileri algılamak
+
+bunu Players.PlayerAdded/Players.PlayerRemoving ile yapabilirsiniz ve fonksiyona bağlayabilirsiniz. Server Script'imizi **ServerScriptService**'a koyup bu kodu yazacağız.
+```lua
+local Players = game:GetService("Players")
+
+Players.PlayerAdded:Connect(function(oyuncu) -- oyuncunun oyuna girip girmediğini kontrol eder
+  print(oyuncu, "isimli oyuncu oyuna girdi") -- eğer oyuncu oyuna girerse bu çıktıyı verir.
+end)
+```
+
+![image](https://github.com/user-attachments/assets/8bd3a594-0006-4edc-ade7-fecb377d1bfc)
+
+çıktığını algılamak için ise bu kod yazacağız.
+
+```lua
+local Players = game:GetService("Players")
+
+Players.PlayerAdded:Connect(function(oyuncu) -- oyuncunun oyuna girip girmediğini kontrol eder
+	print(oyuncu, "isimli oyuncu oyuna girdi") -- eğer oyuncu oyuna girerse bu çıktıyı verir.
+end)
+
+Players.PlayerRemoving:Connect(function(oyuncu) -- oyuncunun oyuna çıkıp çıkmadığını kontrol eder
+	print(oyuncu, "isimli oyuncu oyundan çıktı") -- eğer oyuncu oyuna çıkarsa bu çıktıyı verir.
+end)
+```
+  
+https://github.com/user-attachments/assets/e91b0fd4-38d4-4181-8016-9d1105a749eb
+
+
